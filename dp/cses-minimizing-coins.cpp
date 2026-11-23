@@ -18,7 +18,7 @@ the subproblem with least answer, which is either 10 or 6(both have 2). now we j
 let dp[i] = minimum coins used to construct i
 lets consider all elements of our dp array = 1e9
 
-now dp[x] = min(dp[x],dp[x-a[i]]+1)  (i = 0 to length of given coin array) only if i>=a[j]
+now dp[x] = min(dp[x],dp[x-a[i]]+1)  (i = 0 to length of given coin array) only if x>=a[i]
 base case: dp[0] = 0. because if we have to construct 1 from {1,5,7} acc to our formula
 dp[1] =  min(dp[1],dp[0]+1) other coins are greater than 1
 so for dp[1] to be 1 dp[0] must be 0 and also there are 0 coins which we can use to make 0
